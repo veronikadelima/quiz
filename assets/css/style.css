@@ -1,0 +1,22 @@
+.area-button {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px !important;
+}
+
+.area-button button {
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #4F5363;
+}
+
+.modal-body form{
+    display: block;
+}
+
+.total-pontos {
+    display: none;
+    justify-content: center;
+}
