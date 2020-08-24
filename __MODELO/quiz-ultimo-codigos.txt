@@ -1,0 +1,1039 @@
+
+c('#area-check-option1').addEventListener('click', () => {
+    c('#check-option1').innerHTML = 'X';
+    c('#area-check-option1').style.backgroundColor = '#76d386';
+
+    c('#check-option2').innerHTML = '';
+    c('#area-check-option2').style.backgroundColor = '#EEE';
+
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE';
+
+    c('#check-option4').innerHTML = '';
+    c('#area-check-option4').style.backgroundColor = '#EEE';
+
+    c('#check-option5').innerHTML = '';
+    c('#area-check-option5').style.backgroundColor = '#EEE';
+
+    if(questao = c('.modal-header h6').innerHTML === pergunta0.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    } else {
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta1.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta2.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta3.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta4.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE';       
+    } else {
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';      
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';      
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE'; 
+    }
+});
+
+c('#area-check-option2').addEventListener('click', () => {
+    c('#check-option1').innerHTML = '';
+    c('#area-check-option1').style.backgroundColor = '#EEE';
+
+    c('#check-option2').innerHTML = 'X';
+    c('#area-check-option2').style.backgroundColor = '#76d386';
+
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE';
+
+    c('#check-option4').innerHTML = '';
+    c('#area-check-option4').style.backgroundColor = '#EEE';
+
+    c('#check-option5').innerHTML = '';
+    c('#area-check-option5').style.backgroundColor = '#EEE';
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta0.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    } else {
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta1.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta2.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta3.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta4.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE';       
+    } else {
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';      
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';      
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE'; 
+    }
+});
+
+c('#area-check-option3').addEventListener('click', () => {
+    c('#check-option1').innerHTML = '';
+    c('#area-check-option1').style.backgroundColor = '#EEE';
+
+    c('#check-option2').innerHTML = '';
+    c('#area-check-option2').style.backgroundColor = '#EEE';
+
+    c('#check-option3').innerHTML = 'X';
+    c('#area-check-option3').style.backgroundColor = '#76d386';
+
+    c('#check-option4').innerHTML = '';
+    c('#area-check-option4').style.backgroundColor = '#EEE';
+
+    c('#check-option5').innerHTML = '';
+    c('#area-check-option5').style.backgroundColor = '#EEE';
+
+    if(questao = c('.modal-header h6').innerHTML === pergunta0.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    } else {
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta1.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta2.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta3.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta4.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE';       
+    } else {
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';      
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';      
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE'; 
+    }
+});
+
+c('#area-check-option4').addEventListener('click', () => {
+    c('#check-option1').innerHTML = '';
+    c('#area-check-option1').style.backgroundColor = '#EEE';
+
+    c('#check-option2').innerHTML = '';
+    c('#area-check-option2').style.backgroundColor = '#EEE';
+
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE';
+
+    c('#check-option4').innerHTML = 'X';
+    c('#area-check-option4').style.backgroundColor = '#76d386';
+
+    c('#check-option5').innerHTML = '';
+    c('#area-check-option5').style.backgroundColor = '#EEE';
+
+    if(questao = c('.modal-header h6').innerHTML === pergunta0.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    } else {
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta1.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta2.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta3.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta4.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE';       
+    } else {
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';      
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';      
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE'; 
+    }
+});
+
+c('#area-check-option5').addEventListener('click', () => {
+    c('#check-option1').innerHTML = '';
+    c('#area-check-option1').style.backgroundColor = '#EEE';
+
+    c('#check-option2').innerHTML = '';
+    c('#area-check-option2').style.backgroundColor = '#EEE';
+
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE';
+
+    c('#check-option4').innerHTML = '';
+    c('#area-check-option4').style.backgroundColor = '#EEE';
+
+    c('#check-option5').innerHTML = 'X';
+    c('#area-check-option5').style.backgroundColor = '#76d386';
+
+    if(questao = c('.modal-header h6').innerHTML === pergunta0.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    } else {
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta1.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        c('#check-option3').innerHTML = '';
+        c('#area-check-option3').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta2.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option2').innerHTML = '';
+        c('#area-check-option2').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta3.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE';  
+    } else {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        c('#check-option1').innerHTML = '';
+        c('#area-check-option1').style.backgroundColor = '#EEE'; 
+    }
+    
+    if(questao = c('.modal-header h6').innerHTML === pergunta4.questao) {
+        ponto++;
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE';       
+    } else {
+        c('.modal-header h6').innerHTML = 'Fim de Jogo';      
+        c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';      
+        c('#check-option5').innerHTML = '';
+        c('#area-check-option5').style.backgroundColor = '#EEE'; 
+    }
+});
+
+
+/*
+if(questao = c('.modal-header h6').innerHTML === pergunta0.questao) {
+    ponto++;
+    c('.modal-header h6').innerHTML = pergunta1.questao;      
+    c('#option1').innerHTML = pergunta1.option1;      
+    c('#option2').innerHTML = pergunta1.option2;      
+    c('#option3').innerHTML = pergunta1.option3;      
+    c('#option4').innerHTML = pergunta1.option4;      
+    c('#option5').innerHTML = pergunta1.option5;
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE'; 
+} else {
+    c('.modal-header h6').innerHTML = pergunta1.questao;      
+    c('#option1').innerHTML = pergunta1.option1;      
+    c('#option2').innerHTML = pergunta1.option2;      
+    c('#option3').innerHTML = pergunta1.option3;      
+    c('#option4').innerHTML = pergunta1.option4;      
+    c('#option5').innerHTML = pergunta1.option5;
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE'; 
+}
+
+if(questao = c('.modal-header h6').innerHTML === pergunta1.questao) {
+    ponto++;
+    c('.modal-header h6').innerHTML = pergunta2.questao;      
+    c('#option1').innerHTML = pergunta2.option1;      
+    c('#option2').innerHTML = pergunta2.option2;      
+    c('#option3').innerHTML = pergunta2.option3;      
+    c('#option4').innerHTML = pergunta2.option4;      
+    c('#option5').innerHTML = pergunta2.option5;
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE';  
+} else {
+    c('.modal-header h6').innerHTML = pergunta2.questao;      
+    c('#option1').innerHTML = pergunta2.option1;      
+    c('#option2').innerHTML = pergunta2.option2;      
+    c('#option3').innerHTML = pergunta2.option3;      
+    c('#option4').innerHTML = pergunta2.option4;      
+    c('#option5').innerHTML = pergunta2.option5;
+    c('#check-option3').innerHTML = '';
+    c('#area-check-option3').style.backgroundColor = '#EEE'; 
+}
+
+if(questao = c('.modal-header h6').innerHTML === pergunta2.questao) {
+    ponto++;
+    c('.modal-header h6').innerHTML = pergunta3.questao;      
+    c('#option1').innerHTML = pergunta3.option1;      
+    c('#option2').innerHTML = pergunta3.option2;      
+    c('#option3').innerHTML = pergunta3.option3;      
+    c('#option4').innerHTML = pergunta3.option4;      
+    c('#option5').innerHTML = pergunta3.option5;
+    c('#check-option2').innerHTML = '';
+    c('#area-check-option2').style.backgroundColor = '#EEE';  
+} else {
+    c('.modal-header h6').innerHTML = pergunta3.questao;      
+    c('#option1').innerHTML = pergunta3.option1;      
+    c('#option2').innerHTML = pergunta3.option2;      
+    c('#option3').innerHTML = pergunta3.option3;      
+    c('#option4').innerHTML = pergunta3.option4;      
+    c('#option5').innerHTML = pergunta3.option5;
+    c('#check-option2').innerHTML = '';
+    c('#area-check-option2').style.backgroundColor = '#EEE'; 
+}
+
+if(questao = c('.modal-header h6').innerHTML === pergunta3.questao) {
+    ponto++;
+    c('.modal-header h6').innerHTML = pergunta3.questao;      
+    c('#option1').innerHTML = pergunta3.option1;      
+    c('#option2').innerHTML = pergunta3.option2;      
+    c('#option3').innerHTML = pergunta3.option3;      
+    c('#option4').innerHTML = pergunta3.option4;      
+    c('#option5').innerHTML = pergunta3.option5;
+    c('#check-option1').innerHTML = '';
+    c('#area-check-option1').style.backgroundColor = '#EEE';  
+} else {
+    c('.modal-header h6').innerHTML = pergunta3.questao;      
+    c('#option1').innerHTML = pergunta3.option1;      
+    c('#option2').innerHTML = pergunta3.option2;      
+    c('#option3').innerHTML = pergunta3.option3;      
+    c('#option4').innerHTML = pergunta3.option4;      
+    c('#option5').innerHTML = pergunta3.option5;
+    c('#check-option1').innerHTML = '';
+    c('#area-check-option1').style.backgroundColor = '#EEE'; 
+}
+
+if(questao = c('.modal-header h6').innerHTML === pergunta4.questao) {
+    ponto++;
+    c('.modal-header h6').innerHTML = 'Fim de Jogo';
+    c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';
+    c('#check-option5').innerHTML = '';
+    c('#area-check-option5').style.backgroundColor = '#EEE';       
+} else {
+    c('.modal-header h6').innerHTML = 'Fim de Jogo';      
+    c('#tot-pontos h3').innerHTML = 'Você fez ${ponto} pontos!';      
+    c('#check-option5').innerHTML = '';
+    c('#area-check-option5').style.backgroundColor = '#EEE'; 
+}
+
+if(n < 6){   
+            
+    if(opcao === pergunta0.respCerta){
+        n++;
+        ponto++;
+        console.log(n+' certo');
+        console.log(ponto+' certo');
+        c('.modal-body h6').innerHTML = pergunta1.questao;      
+        c('.modal-body #label-option1').innerHTML = pergunta1.option1;      
+        c('.modal-body #label-option2').innerHTML = pergunta1.option2;      
+        c('.modal-body #label-option3').innerHTML = pergunta1.option3;      
+        c('.modal-body #label-option4').innerHTML = pergunta1.option4;      
+        c('.modal-body #label-option5').innerHTML = pergunta1.option5;
+        limparRadio();
+        console.log('Deu certo!');
+    } else {
+        n++;
+        console.log(n+' certo');
+        console.log(ponto+' certo');
+        c('.modal-body h6').innerHTML = pergunta1.questao;      
+        c('.modal-body #label-option1').innerHTML = pergunta1.option1;      
+        c('.modal-body #label-option2').innerHTML = pergunta1.option2;      
+        c('.modal-body #label-option3').innerHTML = pergunta1.option3;      
+        c('.modal-body #label-option4').innerHTML = pergunta1.option4;      
+        c('.modal-body #label-option5').innerHTML = pergunta1.option5;
+    }
+
+   if (n === pergunta1.id){
+        if(opcao === pergunta1.respCerta){
+            n++;
+            ponto++;
+            console.log(n+' certo');
+            console.log(ponto+' certo');
+            c('.modal-body h6').innerHTML = pergunta2.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta2.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta2.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta2.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta2.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta2.option5;
+            limparRadio();
+        } else {
+            n++;
+            console.log(n+' errado');
+            console.log(ponto+' errado');
+            limparRadio();
+            c('.modal-body h6').innerHTML = pergunta2.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta2.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta2.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta2.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta2.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta2.option5;
+        }
+    }
+
+     if (n === pergunta2.id){
+        if(opcao === pergunta2.respCerta){
+            n++;
+            ponto++;
+            console.log(n+' certo');
+            console.log(ponto+' certo');
+            c('.modal-body h6').innerHTML = pergunta3.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta3.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta3.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta3.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta3.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta3.option5;
+            limparRadio();
+        } else {
+            n++;
+            console.log(n+' errado');
+            console.log(ponto+' errado');
+            limparRadio();
+            c('.modal-body h6').innerHTML = pergunta3.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta3.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta3.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta3.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta3.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta3.option5;
+        }
+    }
+
+    if (n === pergunta3.id){
+        if(opcao === pergunta3.respCerta){
+            n++;
+            ponto++;
+            console.log(n+' certo');
+            console.log(ponto+' certo');
+            c('.modal-body h6').innerHTML = pergunta4.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta4.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta4.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta4.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta4.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta4.option5;
+            limparRadio();
+        } else {
+            n++;
+            console.log(n+' errado');
+            console.log(ponto+' errado');
+            limparRadio();
+            c('.modal-body h6').innerHTML = pergunta4.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta4.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta4.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta4.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta4.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta4.option5;
+        }
+    }
+
+    if (n === pergunta4.id){
+        if(opcao === pergunta4.respCerta){
+            n++;
+            ponto++;
+            console.log(n+' certo');
+            console.log(ponto+' certo');
+            c('.modal-body h6').innerHTML = pergunta5.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta5.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta5.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta5.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta5.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta5.option5;
+            limparRadio();
+        } else {
+            n++;
+            console.log(n+' errado');
+            console.log(ponto+' errado');
+            limparRadio();
+            c('.modal-body h6').innerHTML = pergunta5.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta5.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta5.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta5.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta5.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta5.option5;
+        }
+    }
+
+    if (n === pergunta5.id){
+        if(opcao === pergunta5.respCerta){
+            n++;
+            ponto++;
+            console.log(n+' certo');
+            console.log(ponto+' certo');
+            c('.area-totpontos #tot-pontos').innerHTML = `Você fez ${ponto} pontos!`;
+            limparRadio();      
+        } else {
+            n++;
+            console.log(n+' errado');
+            console.log(ponto+' errado');
+            c('.area-totpontos #tot-pontos').innerHTML = `Você fez ${ponto} pontos!`;
+            limparRadio();
+        }
+    }
+
+}
+
+
+*/
+
+-------------------------------
+//Funções
+function checkRadio() {
+
+    var var_name = $("input[name='option']:checked").val();
+
+    /*var option = document.getElementsByName('option');
+    var i = 0;
+    for(i; i<option.length; i++){
+       if(option[i].checked){
+            console.log(ckRadio);
+        break;
+    }*/
+}
+
+//Implemantação
+
+    c('.modal-body h6').innerHTML = pergunta0.questao;      
+    c('.modal-body #label-option1').innerHTML = pergunta0.option1;      
+    c('.modal-body #label-option2').innerHTML = pergunta0.option2;      
+    c('.modal-body #label-option3').innerHTML = pergunta0.option3;      
+    c('.modal-body #label-option4').innerHTML = pergunta0.option4;      
+    c('.modal-body #label-option5').innerHTML = pergunta0.option5;
+
+/*  
+    c('input #option').addEventListener('click', () => {
+        option = c('input #option').val();
+        
+        console.log(option);
+    
+      if(option === pergunta0.respCerta){
+            n++;
+            ponto++;
+            console.log(n+' certo');
+            console.log(ponto+' certo');
+            c('.modal-body h6').innerHTML = pergunta1.questao;      
+            c('.modal-body #label-option1').innerHTML = pergunta1.option1;      
+            c('.modal-body #label-option2').innerHTML = pergunta1.option2;      
+            c('.modal-body #label-option3').innerHTML = pergunta1.option3;      
+            c('.modal-body #label-option4').innerHTML = pergunta1.option4;      
+            c('.modal-body #label-option5').innerHTML = pergunta1.option5;
+        } else {
+            n++;
+            console.log(n+' errado');
+            console.log(ponto+' errado');
+        }
+
+        if (n === pergunta1.id){
+            if(option === pergunta1.respCerta){
+                n++;
+                ponto++;
+                console.log(n+' certo');
+                console.log(ponto+' certo');
+                c('.modal-body h6').innerHTML = pergunta2.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta2.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta2.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta2.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta2.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta2.option5;
+            } else {
+                n++;
+                console.log(n+' errado');
+                console.log(ponto+' errado');
+            }
+        }
+
+        if (n === pergunta2.id){
+            if(option === pergunta2.respCerta){
+                n++;
+                ponto++;
+                console.log(n+' certo');
+                console.log(ponto+' certo');
+                c('.modal-body h6').innerHTML = pergunta3.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta3.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta3.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta3.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta3.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta3.option5;
+            } else {
+                n++;
+                console.log(n+' errado');
+                console.log(ponto+' errado');
+            }
+        }
+
+        if (n === pergunta3.id){
+            if(option === pergunta3.respCerta){
+                n++;
+                ponto++;
+                console.log(n+' certo');
+                console.log(ponto+' certo');
+                c('.modal-body h6').innerHTML = pergunta4.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta4.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta4.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta4.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta4.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta4.option5;
+            } else {
+                n++;
+                console.log(n+' errado');
+                console.log(ponto+' errado');
+            }
+        }
+
+        if (n === pergunta4.id){
+            if(option === pergunta4.respCerta){
+                n++;
+                ponto++;
+                console.log(n+' certo');
+                console.log(ponto+' certo');
+                c('.modal-body h6').innerHTML = pergunta5.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta5.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta5.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta5.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta5.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta5.option5;
+            } else {
+                n++;
+                console.log(n+' errado');
+                console.log(ponto+' errado');
+            }
+        }
+
+        if (n === pergunta5.id){
+            if(option === pergunta5.respCerta){
+                n++;
+                ponto++;
+                console.log(n+' certo');
+                console.log(ponto+' certo');
+                c('.area-totpontos #tot-pontos').innerHTML = `Você fez ${ponto} pontos!`;      
+            } else {
+                n++;
+                console.log(n+' errado');
+                console.log(ponto+' errado');
+                c('.area-totpontos #tot-pontos').innerHTML = `Você fez ${ponto} pontos!`;
+            }
+        }
+    });
+}*/
+
+_____________________________________________________________
+
+if (n === pergunta1.id){
+            if(option === pergunta1.respCerta){
+                n++;
+                ponto++;
+                c('.modal-body h6').innerHTML = pergunta2.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta2.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta2.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta2.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta2.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta2.option5;
+            } else {
+                n++;
+            }
+        }
+
+        if (n === pergunta2.id){
+            if(option === pergunta2.respCerta){
+                n++;
+                ponto++;
+                c('.modal-body h6').innerHTML = pergunta3.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta3.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta3.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta3.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta3.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta3.option5;
+            } else {
+                n++;
+            }
+        }
+
+        if (n === pergunta3.id){
+            if(option === pergunta3.respCerta){
+                n++;
+                ponto++;
+                c('.modal-body h6').innerHTML = pergunta4.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta4.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta4.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta4.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta4.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta4.option5;
+            } else {
+                n++;
+            }
+        }
+
+        if (n === pergunta4.id){
+            if(option === pergunta4.respCerta){
+                n++;
+                ponto++;
+                c('.modal-body h6').innerHTML = pergunta5.questao;      
+                c('.modal-body #label-option1').innerHTML = pergunta5.option1;      
+                c('.modal-body #label-option2').innerHTML = pergunta5.option2;      
+                c('.modal-body #label-option3').innerHTML = pergunta5.option3;      
+                c('.modal-body #label-option4').innerHTML = pergunta5.option4;      
+                c('.modal-body #label-option5').innerHTML = pergunta5.option5;
+            } else {
+                n++;
+            }
+        }
+
+        if (n === pergunta5.id){
+            if(option === pergunta5.respCerta){
+                n++;
+                ponto++;
+                c('.area-totpontos #tot-pontos').innerHTML = `Você fez ${ponto} pontos!`;      
+            } else {
+                n++;
+                c('.area-totpontos #tot-pontos').innerHTML = `Você fez ${ponto} pontos!`;
+            }
+        }

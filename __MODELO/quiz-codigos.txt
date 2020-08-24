@@ -1,0 +1,149 @@
+if(respCerta === option){
+                    //console.log(respCerta);
+                    //console.log(option);
+                    //console.log('São iguais');
+                    ponto++;
+                    //console.log(ponto);
+                    c('.modal-body h6').innerHTML = perguntaJson[n]['questao'];      
+                    c('.modal-body #label-option1').innerHTML = perguntaJson[n]['option1'];      
+                    c('.modal-body #label-option2').innerHTML = perguntaJson[n]['option2'];      
+                    c('.modal-body #label-option3').innerHTML = perguntaJson[n]['option3'];      
+                    c('.modal-body #label-option4').innerHTML = perguntaJson[n]['option4'];      
+                    c('.modal-body #label-option5').innerHTML = perguntaJson[n]['option5'];            
+
+                }
+
+                if(respCerta != option) {
+                    //console.log(respCerta);
+                    //console.log(option);
+                    //console.log('São diferentes');                    
+                    c('.modal-body h6').innerHTML = perguntaJson[n]['questao'];      
+                    c('.modal-body #label-option1').innerHTML = perguntaJson[n]['option1'];      
+                    c('.modal-body #label-option2').innerHTML = perguntaJson[n]['option2'];      
+                    c('.modal-body #label-option3').innerHTML = perguntaJson[n]['option3'];      
+                    c('.modal-body #label-option4').innerHTML = perguntaJson[n]['option4'];      
+                    c('.modal-body #label-option5').innerHTML = perguntaJson[n]['option5'];
+                }
+_____________________________________________
+
+let [pergunta] = perguntaJson[n];
+                let {id, questao, option1, option2, option3, option4, option5, respCerta} = pergunta;
+                console.log(respCerta);
+
+                if(respCerta === option){
+                    //console.log(respCerta);
+                    //console.log(option);
+                    //console.log('São iguais');
+                    n++;
+                    ponto++;
+                    //console.log(ponto);
+
+                    if(perguntaJson[n]) {
+                        c('.modal-body h6').innerHTML = perguntaJson[n]['questao'];      
+                        c('.modal-body #label-option1').innerHTML = perguntaJson[n]['option1'];      
+                        c('.modal-body #label-option2').innerHTML = perguntaJson[n]['option2'];      
+                        c('.modal-body #label-option3').innerHTML = perguntaJson[n]['option3'];      
+                        c('.modal-body #label-option4').innerHTML = perguntaJson[n]['option4'];      
+                        c('.modal-body #label-option5').innerHTML = perguntaJson[n]['option5'];            
+                    }
+                }
+
+                if(respCerta != option) {
+                    //console.log(respCerta);
+                    //console.log(option);
+                    //console.log('São diferentes');
+                    n++;
+                    
+                    if(perguntaJson[n]) {
+                        c('.modal-body h6').innerHTML = perguntaJson[n]['questao'];      
+                        c('.modal-body #label-option1').innerHTML = perguntaJson[n]['option1'];      
+                        c('.modal-body #label-option2').innerHTML = perguntaJson[n]['option2'];      
+                        c('.modal-body #label-option3').innerHTML = perguntaJson[n]['option3'];      
+                        c('.modal-body #label-option4').innerHTML = perguntaJson[n]['option4'];      
+                        c('.modal-body #label-option5').innerHTML = perguntaJson[n]['option5'];
+                    }
+                }
+
+------------------------------------------------
+
+const c = (el)=>document.querySelector(el);
+const cs = (el)=>document.querySelectorAll(el);
+var option;
+let i;
+let n = 0;
+let ponto = 0;
+let p;
+
+
+// Monta pergunta Inicial
+perguntaJson.map((item, index)=>{
+    if(n === index) {
+        c('input').setAttribute('data-key', index);
+        c('.modal-body h6').innerHTML = item.questao;      
+        c('.modal-body #label-option1').innerHTML = item.option1;      
+        c('.modal-body #label-option2').innerHTML = item.option2;      
+        c('.modal-body #label-option3').innerHTML = item.option3;      
+        c('.modal-body #label-option4').innerHTML = item.option4;      
+        c('.modal-body #label-option5').innerHTML = item.option5;
+    }
+});
+
+// Evento Modal
+
+if (n < 5) {
+    cs('.form-check-input').forEach((i, iIndex)=>{
+        i.addEventListener('click', (e)=>{
+             c('.form-check-input').classList.remove('selected');
+            i.classList.add('selected');
+            option = i.getAttribute('id');
+
+            let p = document.getElementById('questao').innerText;
+            console.log(p);
+            
+            if (perguntaJson[n]['questao'] === p) {
+                                
+                let [pergunta] = perguntaJson;
+                let {id, questao, option1, option2, option3, option4, option5, respCerta} = pergunta;
+
+                if(respCerta === option){
+                    //console.log(respCerta);
+                    //console.log(option);
+                    //console.log('São iguais');
+                    n++;
+                    ponto++;
+                    //console.log(ponto);
+
+                    if(perguntaJson[n]) {
+                        c('.modal-body h6').innerHTML = perguntaJson[n]['questao'];      
+                        c('.modal-body #label-option1').innerHTML = perguntaJson[n]['option1'];      
+                        c('.modal-body #label-option2').innerHTML = perguntaJson[n]['option2'];      
+                        c('.modal-body #label-option3').innerHTML = perguntaJson[n]['option3'];      
+                        c('.modal-body #label-option4').innerHTML = perguntaJson[n]['option4'];      
+                        c('.modal-body #label-option5').innerHTML = perguntaJson[n]['option5'];            
+                    }
+                }
+            }
+
+            if(respCerta != option) {
+                //console.log(respCerta);
+                //console.log(option);
+                //console.log('São diferentes');
+                n++;
+                
+                if(perguntaJson[n]) {
+                    c('.modal-body h6').innerHTML = perguntaJson[n]['questao'];      
+                    c('.modal-body #label-option1').innerHTML = perguntaJson[n]['option1'];      
+                    c('.modal-body #label-option2').innerHTML = perguntaJson[n]['option2'];      
+                    c('.modal-body #label-option3').innerHTML = perguntaJson[n]['option3'];      
+                    c('.modal-body #label-option4').innerHTML = perguntaJson[n]['option4'];      
+                    c('.modal-body #label-option5').innerHTML = perguntaJson[n]['option5'];
+                }
+            }
+        });
+    });               
+}                
+
+if(n === 5) {
+    c('.modal-body h3').innerHTML = `Você fez ${ponto} pontos!`;      
+}
+

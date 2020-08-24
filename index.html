@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <title>Quiz Game</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css"/> 
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+       
+</head>
+<body>
+
+    <div class="models"></div>
+        
+    <header>
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container d-flex justify-content-between">
+                <a href="" class="navbar-brand">
+                    <strong>Quiz Game - O Jogo de Perguntas</strong>
+                </a>
+                <a href="" class="text-white">Sobre</a>
+            </div>
+        </div>
+    </header>
+
+    <main>        
+        <div class="container">
+        
+            <div class="area-button">
+                <button id="btnIniciar" type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">
+                    Clique para dar início ao jogo!
+                </button>
+            </div>
+
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="staticBackdropLabel"></h6>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                           
+                            <div class="option" id="option1"><div class="option-check" id="option1-check"></div><p></p></div>
+                            <div class="option" id="option2"><div class="option-check" id="option2-check"></div><p></p></div>
+                            <div class="option" id="option3"><div class="option-check" id="option3-check"></div><p></p></div>
+                            <div class="option" id="option4"><div class="option-check" id="option4-check"></div><p></p></div>
+                            <div class="option" id="option5"><div class="option-check" id="option5-check"></div><p></p></div>
+                                                        
+                            <div class="total-pontos">
+                                <div class="area-totpontos">
+                                    <h3 class="tot-pontos">Você fez ...tantos... pontos!</h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button id="btnSair" type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                            <button id="btnResetar" type="button" class="btn btn-light" onclick="resetar()">Resetar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="pergunta.js"></script>
+    <script src="assets/js/script.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,85 @@
+ //if (questao.innerHTML != ''){
+        if(res == 'option3'){
+            questao.innerHTML = '2ª Pergunta - Quantos olhos a maior parte das aranhas têm?';
+            labelOption1.innerHTML = 'a) Dois';
+            labelOption2.innerHTML = 'b) Quatro';
+            labelOption3.innerHTML = 'c) Seis';
+            labelOption4.innerHTML = 'd) Quatro pares';
+            labelOption5.innerHTML = 'e) Um';
+            pontos = pontos + 1;
+        } else {
+            questao.innerHTML = '2ª Pergunta - Quantos olhos a maior parte das aranhas têm?';
+            labelOption1.innerHTML = 'a) Dois';
+            labelOption2.innerHTML = 'b) Quatro';
+            labelOption3.innerHTML = 'c) Seis';
+            labelOption4.innerHTML = 'd) Quatro pares';
+            labelOption5.innerHTML = 'e) Um';
+        }
+    //}
+
+    //if(questao.innerHTML != '') {
+        if(res == 'option4') {
+            questao.innerHTML = '3ª Pergunta - Qual das alternativas contém apenas nomes de rios?';
+            labelOption1.innerHTML = 'a) São Francisco, Douro, Antártico';
+            labelOption2.innerHTML = 'b) Nilo, Amazonas, Mississipi';
+            labelOption3.innerHTML = 'c) Cáspio, Vermelho, Reno';
+            labelOption4.innerHTML = 'd) Tocantins, Bering, Ganges';
+            labelOption5.innerHTML = 'e)Danúbio, Jordão, Morto';
+            pontos = pontos + 1;
+        } else {
+            questao.innerHTML = '3ª Pergunta - Qual das alternativas contém apenas nomes de rios?';
+            labelOption1.innerHTML = 'a) São Francisco, Douro, Antártico';
+            labelOption2.innerHTML = 'b) Nilo, Amazonas, Mississipi';
+            labelOption3.innerHTML = 'c) Cáspio, Vermelho, Reno';
+            labelOption4.innerHTML = 'd) Tocantins, Bering, Ganges';
+            labelOption5.innerHTML = 'e)Danúbio, Jordão, Morto';
+        }
+    //}
+    
+    /*if(questao.innerHTML == '') {
+        if(res == 'option2') {
+            questao.innerHTML = '4ª Pergunta - Quanto mede uma girafa?';
+            labelOption1.innerHTML = 'a) Entre 4,8 e 5,5 metros';
+            labelOption2.innerHTML = 'b) 2 metros';
+            labelOption3.innerHTML = 'c) Entre 5 e 6 metros';
+            labelOption4.innerHTML = 'd) 2,5 metros';
+            labelOption5.innerHTML = 'e) 4 metros';
+            pontos = pontos + 1;
+        } else {
+            questao.innerHTML = '4ª Pergunta - Quanto mede uma girafa?';
+            labelOption1.innerHTML = 'a) Entre 4,8 e 5,5 metros';
+            labelOption2.innerHTML = 'b) 2 metros';
+            labelOption3.innerHTML = 'c) Entre 5 e 6 metros';
+            labelOption4.innerHTML = 'd) 2,5 metros';
+            labelOption5.innerHTML = 'e) 4 metros';
+        }
+    }
+    
+    if(questao.innerHTML == '') {
+        if(res == 'option1') {
+            questao.innerHTML = '5ª Pergunta - Qual das alternativas traz apenas nomes de grandes inventores?';
+            labelOption1.innerHTML = 'a) Alfred Nobel, José Bonifácio, Leonardo da Vinci';
+            labelOption2.innerHTML = 'b) Machado de Assis, Oscar Niemeyer e Dmitri Mendeleiev';
+            labelOption3.innerHTML = 'c) Evangelista Torricelli, Thomas Edison, Pablo Picasso';
+            labelOption4.innerHTML = 'd) Stephen Poplawski, Tarsila do Amaral, Amalie Auguste Melitta Bentz';
+            labelOption5.innerHTML = 'e) Alexander Graham Bell, Bartolomeu de Gusmão, Galileu Galilei';
+            pontos = pontos + 1;
+        } else {
+            questao.innerHTML = '5ª Pergunta - Qual das alternativas traz apenas nomes de grandes inventores?';
+            labelOption1.innerHTML = 'a) Alfred Nobel, José Bonifácio, Leonardo da Vinci';
+            labelOption2.innerHTML = 'b) Machado de Assis, Oscar Niemeyer e Dmitri Mendeleiev';
+            labelOption3.innerHTML = 'c) Evangelista Torricelli, Thomas Edison, Pablo Picasso';
+            labelOption4.innerHTML = 'd) Stephen Poplawski, Tarsila do Amaral, Amalie Auguste Melitta Bentz';
+            labelOption5.innerHTML = 'e) Alexander Graham Bell, Bartolomeu de Gusmão, Galileu Galilei';
+        }
+    }
+
+    if(questao.innerHTML == '') {
+        if(res == 'option5'){
+            pontos = pontos + 1;
+            questao.innerHTML =  pontos;
+        } else {
+            questao.innerHTML =  pontos;
+        }
+    }
+    */

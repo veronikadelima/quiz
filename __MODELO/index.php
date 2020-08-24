@@ -1,13 +1,14 @@
 <?php
-require "config.php"
+require "config.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     
-    <title>One Page</title>
+    <title>Quiz Game</title>
     
     <link rel="stylesheet" href="assets/css/style.css"/> 
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
@@ -17,13 +18,11 @@ require "config.php"
        
 </head>
 <body>
-<body>
-
     <header>
         <div class="navbar navbar-dark bg-dark">
             <div class="container d-flex justify-content-beetwen">
                 <a href="" class="navbar-brand">
-                    <strong>Quiz Game - Jogo de Perguntas</strong>
+                    <strong>Quiz Game - Jogo das Perguntas</strong>
                 </a>
                 <a href="" class="text-white">Sobre</a>
             </div>
@@ -35,7 +34,7 @@ require "config.php"
             <div class="container">
                 <!-- Button trigger modal -->
                 <div class="area-button">
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop" id="botao" onclick="iniciar()">
                         Clique para dar início ao jogo!
                     </button>
                 </div>
@@ -45,56 +44,55 @@ require "config.php"
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Quiz Game - Jogo Perguntas</h5>
+                                <h5 class="modal-title" id="staticBackdropLabel">Quiz Game - Jogo das Perguntas</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                <form method="GET">
-                                    <h6>1ª Pergunta - Em que lugar vivem mais cangurus do que pessoas?</h6>
+                            <div class="modal-body">                                                                     
+                                <form id="form" method="GET" action="recebedados.php">
+
+                                    <h6 name="questao" id="questao"></h6>
+
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioperg1"value="option1">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            a) Indonésia
+                                        <input class="form-check-input" type="radio" name="radio" value="option1" id="option1">
+                                        <label class="form-check-label" for="option1" id="label-option1"></label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio" value="option2" id="option2">
+                                        <label class="form-check-label" for="option2" id="label-option2"></label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio" value="option3" id="option3">
+                                        <label class="form-check-label" for="option3" id="label-option3">
+
                                         </label>
                                     </div>
+
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioperg1"value="option2">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            b) Nova Zelândia
-                                        </label>
+                                        <input class="form-check-input" type="radio" name="radio" value="option4" id="option4">
+                                        <label class="form-check-label" for="option4" id="label-option4"></label>
                                     </div>
+
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioperg1"value="option3">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            c) Austrália
-                                        </label>
+                                        <input class="form-check-input" type="radio" name="radio" value="option5" id="option5">
+                                        <label class="form-check-label" for="option5" id="label-option5"></label>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioperg1"value="option4">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            d) Papua-Nova Guiné
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioperg1"value="option5">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            e) África do Sul
-                                        </label>
-                                    </div>
+
                                 </form>
 
                                 <div class="total-pontos">
                                     <div>
-                                        <h3>Você fez ...tantos... pontos!</h3>
+                                        <h3 id="tot-pontos">Você fez ...tantos... pontos!</h3>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">cancelar</button>
-                                <button type="button" class="btn btn-secondary">Responder</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal" id="Sair">Sair</button>
+                                <button type="button" class="btn btn-light" id="responder" onclick="verificar()">Responder</button>
+                                <button type="button" class="btn btn-light" id="resetar" onclick="resetar()">Reiniciar</button>
                             </div>
                         </div>
                     </div>
@@ -102,8 +100,10 @@ require "config.php"
             </div>
         </section>
     </main>   
-   
+    <script src="script.js"></script>
+
+    <script>
+        
+    </script>
 </body>  
-   
-</body>
 </html>

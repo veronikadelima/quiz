@@ -1,0 +1,414 @@
+$('#btnIniciar').click(function(){
+const c = (el) => document.querySelector(el);
+const cs = (el) => document.querySelectorAll(el);
+let [pergunta0, pergunta1, pergunta2, pergunta3, pergunta4] = perguntaJson;
+let questao = 'teste';
+let check;
+let resp;
+let opcao;
+let itens;
+let item_id;
+let n = 0;
+let ponto = 0;
+
+    $("#staticBackdrop").modal({
+        show: true
+    });
+
+    if(n === 0) {
+        c('.modal-header h6').innerHTML = pergunta0.questao;      
+        c('#option1').innerHTML = pergunta0.option1;      
+        c('#option2').innerHTML = pergunta0.option2;      
+        c('#option3').innerHTML = pergunta0.option3;      
+        c('#option4').innerHTML = pergunta0.option4;      
+        c('#option5').innerHTML = pergunta0.option5;
+        resp = pergunta0.respCerta;
+
+        $('.btn-group').click(function(){
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+                n++;
+                ponto++;
+            } else {
+                n++;
+            }
+        });
+    }
+
+    if(n === 1) {
+        c('.modal-header h6').innerHTML = pergunta1.questao;      
+        c('#option1').innerHTML = pergunta1.option1;      
+        c('#option2').innerHTML = pergunta1.option2;      
+        c('#option3').innerHTML = pergunta1.option3;      
+        c('#option4').innerHTML = pergunta1.option4;      
+        c('#option5').innerHTML = pergunta1.option5;
+        resp = pergunta1.respCerta;
+
+        $('.btn-group').click(function(){
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+                n++;
+                ponto++;
+            } else {
+                n++;
+            }
+        });
+    }
+
+    if(n === 2) {
+        c('.modal-header h6').innerHTML = pergunta2.questao;      
+        c('#option1').innerHTML = pergunta2.option1;      
+        c('#option2').innerHTML = pergunta2.option2;      
+        c('#option3').innerHTML = pergunta2.option3;      
+        c('#option4').innerHTML = pergunta2.option4;      
+        c('#option5').innerHTML = pergunta2.option5;
+        resp = pergunta2.respCerta;
+
+        $('.btn-group').click(function(){
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+                n++;
+                ponto++;
+            } else {
+                n++;
+            }
+        });
+    }
+
+    if(n === 3) {
+        c('.modal-header h6').innerHTML = pergunta3.questao;      
+        c('#option1').innerHTML = pergunta3.option1;      
+        c('#option2').innerHTML = pergunta3.option2;      
+        c('#option3').innerHTML = pergunta3.option3;      
+        c('#option4').innerHTML = pergunta3.option4;      
+        c('#option5').innerHTML = pergunta3.option5;
+        resp = pergunta3.respCerta;
+
+        $('.btn-group').click(function(){
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+                n++;
+                ponto++;
+            } else {
+                n++;
+            }
+        });
+    }
+
+    if(n === 4) {
+        c('.modal-header h6').innerHTML = pergunta4.questao;      
+        c('#option1').innerHTML = pergunta4.option1;      
+        c('#option2').innerHTML = pergunta4.option2;      
+        c('#option3').innerHTML = pergunta4.option3;      
+        c('#option4').innerHTML = pergunta4.option4;      
+        c('#option5').innerHTML = pergunta4.option5;
+        resp = pergunta4.respCerta;
+
+        $('.btn-group').click(function(){
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+                n++;
+                ponto++;
+            } else {
+                n++;
+            }
+        });
+    }
+
+    if(n === 5) {
+
+        $('.btn-group').click(function(){
+        c('.modal-header h6').innerHTML = pergunta5.questao;      
+        c('#option1').innerHTML = pergunta5.option1;      
+        c('#option2').innerHTML = pergunta5.option2;      
+        c('#option3').innerHTML = pergunta5.option3;      
+        c('#option4').innerHTML = pergunta5.option4;      
+        c('#option5').innerHTML = pergunta5.option5;
+        resp = pergunta5.respCerta;
+        
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+              ponto++;
+              c('.modal-header h6').innerHTML = "Fim de Jogo!";
+              c('#tot-pontos h3').innerHTML = `Você fez ${ponto} pontos!`;
+            } else {
+                n++;
+            }
+        });
+    } 
+    
+});
+
+----------------------------------------------------------------
+
+if(n <= 0) {
+        c('.modal-header h6').innerHTML = pergunta0.questao;      
+        c('#option1').innerHTML = pergunta0.option1;      
+        c('#option2').innerHTML = pergunta0.option2;      
+        c('#option3').innerHTML = pergunta0.option3;      
+        c('#option4').innerHTML = pergunta0.option4;      
+        c('#option5').innerHTML = pergunta0.option5;
+        resp = pergunta0.respCerta;
+
+        $('.btn-group').click(function(){
+            $('.btn-group').css('background-color', '#EEE'); //volta o padrão
+            $(this).css('background-color', '#76d386');
+            item_id = $(this).attr('id');
+            opcao = item_id.substr(-7, 7);
+            check = `check-${opcao}`;
+            itens = $('.form-check-label-check').empty();
+            c(`#${check}`).innerHTML = 'X';
+
+            if(opcao === resp) {
+                n++;
+                ponto++;
+            } else {
+                n++;
+            }
+        });
+    }
+
+___________________________________________________________
+
+c('.modal-header h6').innerHTML = pergunta0.questao;      
+c('#option1').innerHTML = pergunta0.option1;      
+c('#option2').innerHTML = pergunta0.option2;      
+c('#option3').innerHTML = pergunta0.option3;      
+c('#option4').innerHTML = pergunta0.option4;      
+c('#option5').innerHTML = pergunta0.option5;
+resp = pergunta0.respCerta;
+___________________________________________________________
+
+$('.btn-group').click(function(){
+
+    while (n <= 5) {
+
+        
+
+        if (n === 0) {
+            if(c('.modal-header h6').innerHTML === pergunta0.questao) {
+                
+                if(opcao === resp){
+                    n++;
+                    ponto++;
+                    c('.modal-header h6').innerHTML = pergunta1.questao;      
+                    c('#option1').innerHTML = pergunta1.option1;      
+                    c('#option2').innerHTML = pergunta1.option2;      
+                    c('#option3').innerHTML = pergunta1.option3;      
+                    c('#option4').innerHTML = pergunta1.option4;      
+                    c('#option5').innerHTML = pergunta1.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                } else {
+                    n++;
+                    c('.modal-header h6').innerHTML = pergunta1.questao;      
+                    c('#option1').innerHTML = pergunta1.option1;      
+                    c('#option2').innerHTML = pergunta1.option2;      
+                    c('#option3').innerHTML = pergunta1.option3;      
+                    c('#option4').innerHTML = pergunta1.option4;      
+                    c('#option5').innerHTML = pergunta1.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                }
+            }
+        }
+
+        if(n === 1){
+            if(c('.modal-header h6').innerHTML === pergunta1.questao) {
+                resp = pergunta1.respCerta;
+                if(opcao === resp){
+                    n++;
+                    ponto++;
+                    c('.modal-header h6').innerHTML = pergunta2.questao;      
+                    c('#option1').innerHTML = pergunta2.option1;      
+                    c('#option2').innerHTML = pergunta2.option2;      
+                    c('#option3').innerHTML = pergunta2.option3;      
+                    c('#option4').innerHTML = pergunta2.option4;      
+                    c('#option5').innerHTML = pergunta2.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                } else {
+                    n++;
+                    c('.modal-header h6').innerHTML = pergunta2.questao;      
+                    c('#option1').innerHTML = pergunta2.option1;      
+                    c('#option2').innerHTML = pergunta2.option2;      
+                    c('#option3').innerHTML = pergunta2.option3;      
+                    c('#option4').innerHTML = pergunta2.option4;      
+                    c('#option5').innerHTML = pergunta2.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                }
+            }
+        }
+
+        if(n === 2){
+            if(c('.modal-header h6').innerHTML === pergunta2.questao) {
+                resp = pergunta2.respCerta;
+                if(opcao === resp){
+                    n++;
+                    ponto++;
+                    c('.modal-header h6').innerHTML = pergunta3.questao;      
+                    c('#option1').innerHTML = pergunta3.option1;      
+                    c('#option2').innerHTML = pergunta3.option2;      
+                    c('#option3').innerHTML = pergunta3.option3;      
+                    c('#option4').innerHTML = pergunta3.option4;      
+                    c('#option5').innerHTML = pergunta3.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                } else {
+                    n++;
+                    c('.modal-header h6').innerHTML = pergunta3.questao;      
+                    c('#option1').innerHTML = pergunta3.option1;      
+                    c('#option2').innerHTML = pergunta3.option2;      
+                    c('#option3').innerHTML = pergunta3.option3;      
+                    c('#option4').innerHTML = pergunta3.option4;      
+                    c('#option5').innerHTML = pergunta3.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                }
+            }
+        }
+
+        if(n === 3){
+            if(c('.modal-header h6').innerHTML === pergunta3.questao) {
+                resp = pergunta3.respCerta;
+                if(opcao === resp){
+                    n++;
+                    ponto++;
+                    c('.modal-header h6').innerHTML = pergunta4.questao;      
+                    c('#option1').innerHTML = pergunta4.option1;      
+                    c('#option2').innerHTML = pergunta4.option2;      
+                    c('#option3').innerHTML = pergunta4.option3;      
+                    c('#option4').innerHTML = pergunta4.option4;      
+                    c('#option5').innerHTML = pergunta4.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                } else {
+                    n++;
+                    c('.modal-header h6').innerHTML = pergunta4.questao;      
+                    c('#option1').innerHTML = pergunta4.option1;      
+                    c('#option2').innerHTML = pergunta4.option2;      
+                    c('#option3').innerHTML = pergunta4.option3;      
+                    c('#option4').innerHTML = pergunta4.option4;      
+                    c('#option5').innerHTML = pergunta4.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                }
+            }
+        }
+
+        if(n === 4){
+            if(c('.modal-header h6').innerHTML === pergunta4.questao) {
+                resp = pergunta4.respCerta;
+                if(opcao === resp){
+                    n++;
+                    ponto++;
+                    c('.modal-header h6').innerHTML = pergunta5.questao;      
+                    c('#option1').innerHTML = pergunta5.option1;      
+                    c('#option2').innerHTML = pergunta5.option2;      
+                    c('#option3').innerHTML = pergunta5.option3;      
+                    c('#option4').innerHTML = pergunta5.option4;      
+                    c('#option5').innerHTML = pergunta5.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                } else {
+                    n++;
+                    c('.modal-header h6').innerHTML = pergunta5.questao;      
+                    c('#option1').innerHTML = pergunta5.option1;      
+                    c('#option2').innerHTML = pergunta5.option2;      
+                    c('#option3').innerHTML = pergunta5.option3;      
+                    c('#option4').innerHTML = pergunta5.option4;      
+                    c('#option5').innerHTML = pergunta5.option5;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                }
+            }
+        }
+
+        if(n === 5){
+            if(c('.modal-header h6').innerHTML === pergunta5.questao) {
+                resp = pergunta5.respCerta;
+                if(opcao === resp){
+                    n++;
+                    ponto++;
+                    c('.modal-header h6').innerHTML = 'FIM DE JOGO!';
+                    c('.modal-header h6').innerHTML = `Você fez ${ponto} pontos!`;
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                } else {
+                    n++;
+                    c('.modal-header h6').innerHTML = 'FIM DE JOGO!';      
+                    c('.modal-header h6').innerHTML = `Você fez ${ponto} pontos!`;      
+                    item_id = '';
+                    opcao = '';
+                    check = '';
+                    resp = '';
+                }
+            }
+        }
+    }
+});  
